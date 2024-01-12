@@ -1,5 +1,6 @@
 # grafana-mailcow
-Dashboard for Mailcow Monitoring with Prometheus and Grafana
+* Mailcow: My dashboard for Mailcow Monitoring with Prometheus and Grafana
+* Postfix: A dashboard I found somewhere, but don't remember where, so I can't link - sorry. I just added the instance selector.
 
 # docker-compose.override.yml additions:
 * this is asuming the existence of a docker network named "rproxy" in which a reverse proxy listens and secures requests to those exporters
