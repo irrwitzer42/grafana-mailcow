@@ -81,6 +81,18 @@
       "includeVars": false,
       "keepTime": false,
       "tags": [],
+      "targetBlank": false,
+      "title": "Grafana",
+      "tooltip": "Grafana Labs Dashboard page",
+      "type": "link",
+      "url": "https://grafana.com/grafana/dashboards/20324/"
+    },
+    {
+      "asDropdown": false,
+      "icon": "external link",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
       "targetBlank": true,
       "title": "GitHub",
       "tooltip": "GitHub Repository of Origin",
@@ -1652,7 +1664,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -1715,7 +1728,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "yellow",
@@ -1799,7 +1813,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -1870,7 +1885,9 @@
               "__name__": true,
               "image": true,
               "instance": true,
-              "job": true
+              "job": true,
+              "site": true,
+              "type": true
             },
             "includeByName": {},
             "indexByName": {},
@@ -1899,7 +1916,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "yellow",
@@ -2077,6 +2095,6 @@
   "timezone": "",
   "title": "Mailcow",
   "uid": "afe68027-273f-4c78-b063-0d3dbef2e1f4",
-  "version": 45,
+  "version": 47,
   "weekStart": ""
 }
