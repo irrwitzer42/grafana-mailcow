@@ -277,8 +277,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "red",
-                    "value": null
+                    "color": "red"
                   },
                   {
                     "color": "green",
@@ -372,8 +371,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "red",
-                    "value": null
+                    "color": "red"
                   },
                   {
                     "color": "green",
@@ -449,8 +447,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "red",
-                    "value": null
+                    "color": "red"
                   },
                   {
                     "color": "#EAB839",
@@ -600,8 +597,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "red",
-                    "value": null
+                    "color": "red"
                   },
                   {
                     "color": "green",
@@ -1656,8 +1652,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -1720,8 +1715,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "yellow",
@@ -1805,8 +1799,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -1816,7 +1809,20 @@
           },
           "unit": "none"
         },
-        "overrides": []
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Login"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "dateTimeAsLocal"
+              }
+            ]
+          }
+        ]
       },
       "gridPos": {
         "h": 8,
@@ -1846,7 +1852,7 @@
           },
           "editorMode": "code",
           "exemplar": false,
-          "expr": "mailcow_mailbox_last_login{job=~\"$job\",host=~\"$host\",mailbox=~\".*@$domain\"}",
+          "expr": "mailcow_mailbox_last_login{job=~\"$job\",host=~\"$host\",mailbox=~\".*@$domain\"} * 1000",
           "format": "table",
           "instant": true,
           "legendFormat": "Last Login",
@@ -1893,8 +1899,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "yellow",
@@ -2072,6 +2077,6 @@
   "timezone": "",
   "title": "Mailcow",
   "uid": "afe68027-273f-4c78-b063-0d3dbef2e1f4",
-  "version": 44,
+  "version": 45,
   "weekStart": ""
 }
